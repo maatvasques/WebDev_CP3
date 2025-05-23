@@ -31,7 +31,7 @@ const botaoOrdenarPreco = document.getElementById('ordenarPreco');
 let produtosVisiveis = [...produtos];
 let ordemCrescente = true;
 
-// como os produtos aparecem para o usuario
+
 function exibirProduto(produto) {
     const produtoDiv = document.createElement('div');
     produtoDiv.classList.add('produto');
@@ -55,7 +55,7 @@ function exibirProduto(produto) {
     listaProdutos.append(produtoDiv);
 }
 
-// btn pra listar todos os produtos
+
 function listarTodosProdutos() {
     listaProdutos.innerHTML = '';
     produtosVisiveis = [...produtos];
@@ -64,7 +64,7 @@ function listarTodosProdutos() {
     atualizarTextoBotaoOrdenar();
 }
 
-// btn pra filtrar os produtos
+
 function filtrarProdutos() {
     listaProdutos.innerHTML = '';
     const categoriaSelecionada = Categoria.value;
@@ -78,7 +78,7 @@ function filtrarProdutos() {
 ordemCrescente = true;
 atualizarTextoBotaoOrdenar();
 
-// btn pra ordenar os preços
+
 function ordenarPorPreco() {
     listaProdutos.innerHTML = '';
     produtosVisiveis.sort((a, b) => {
