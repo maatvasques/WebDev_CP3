@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h2>Filtrar Produtos</h2>
+        <form id="formFiltro">
+            <button type='button' id="listarTodos">Listar Todos os Produtos</button>
+            <select id="Categoria">
+                <option value="todos" selected>Todas as Categorias</option>
+                <option value="Vestuário">Vestuário</option>
+                <option value="Calçados">Calçados</option>
+                <option value="Livros">Livros</option>
+                <option value="Papelaria">Papelaria</option>
+                <option value="Acessórios">Acessórios</option>
+            </select>
+            <br><br>
+            <input type="checkbox" id="Disponibilidade">
+            <label for="Disponibilidade"> => Somente Disponíveis</label>
+            <br><br>
+            <button type="button" id="filtrar">Filtrar</button>
+
+            <button type="button" id="ordenarPreco">Ordenar por Preço</button>
+        </form>
+
+        <h2>Produtos:</h2>
+    </div>
+    <div id="listaProdutos">
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
